@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link rel="stylesheet" href="./css/StylePokedex.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header">
+            <img src="./assets/PokemonLogo/International_Pokémon_logo.svg.webp" alt="Logo" id="logo">
+        </div>
+        <div class="section">
+            <div class="randomPokemonSection"> 
+                <div id="headerScaner">
+                    <h1>Pokemones</h3>   
+                </div>
+                <div class="pokemon1">
+                    <img class="circulo" src="./assets/PokemonTypes/pokemaster-0.png" width="90" heigth="90" alt="">
+                </div>
+                <div class="pokemon2">
+                    <img class="circulo" src="./assets/PokemonTypes/pokemaster-0.png" width="90" heigth="90" alt="">    
+                </div>
+                <div class="pokemon3">
+                    <img class="circulo" src="./assets/PokemonTypes/pokemaster-0.png" width="90" heigth="90" alt="">    
+                </div>
+                <div class="pokemon4">
+                    <img class="circulo" src="./assets/PokemonTypes/pokemaster-0.png" width="90" heigth="90" alt="">    
+                </div>
+
+            </div>
+            <div class="type-circulo">
+                <div class="contenedor-circulo">
+                    <img class="circulo" id="type1" src="./assets/PokemonTypes/pokemaster-0.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type2" src="./assets/PokemonTypes/pokemaster-2.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type3" src="./assets/PokemonTypes/pokemaster-3.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type4" src="./assets/PokemonTypes/pokemaster-4.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type5" src="./assets/PokemonTypes/pokemaster-5.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type6" src="./assets/PokemonTypes/pokemaster-6.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type7" src="./assets/PokemonTypes/pokemaster-7.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type8" src="./assets/PokemonTypes/pokemaster-8.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type9" src="./assets/PokemonTypes/pokemaster-9.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type10" src="./assets/PokemonTypes/pokemaster-10.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type11" src="./assets/PokemonTypes/pokemaster-11.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type12" src="./assets/PokemonTypes/pokemaster-12.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type13" src="./assets/PokemonTypes/pokemaster-13.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type14" src="./assets/PokemonTypes/pokemaster-14.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type15" src="./assets/PokemonTypes/pokemaster-15.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type16" src="./assets/PokemonTypes/pokemaster-16.png" width="50" heigth="50" alt="">
+                    <img class="circulo" id="type17" src="./assets/PokemonTypes/pokemaster-17.png" width="50" heigth="50" alt="">
+                    <input class="btn-enter" type="button" value="Descubrir Pokemones" id="decubrePokemon">
+                </div>
+            </div>
+            <div class="randomPokemonSection">
+                <div id="headerScaner">
+                    <h3>Pokemones</h3> 
+                </div>
+                <div class="pokemon5">
+                    <img class="circulo" src="./assets/PokemonTypes/pokemaster-0.png" width="90" heigth="90" alt="">
+                </div>
+                <div class="pokemon6">
+                    <img class="circulo" src="./assets/PokemonTypes/pokemaster-0.png" width="90" heigth="90" alt="">    
+                </div>
+                <div class="pokemon7">
+                    <img class="circulo" src="./assets/PokemonTypes/pokemaster-0.png" width="90" heigth="90" alt="">
+                </div>
+                <div class="pokemon8">
+                    <img class="circulo" src="./assets/PokemonTypes/pokemaster-0.png" width="90" heigth="90" alt="">    
+                </div>
+
+
+            </div>
+
+            <div class="pokedex" hidden>
+                <div id="tapa1">
+
+                </div>
+                <div id="screen"> 
+                    <form  id="searchName" hidden>
+                        <div id="imagePokedex">
+                            <img src="./assets/whois.png" height="80" alt="quienEs">
+                        </div>
+                        <input type="text" id="inputName" autocomplete="off">
+                    </form>
+                    <div id="pokedexInfo" class="headerScaner" hidden>
+                        <table>
+                            
+                                <tr>
+                                    <td>Nombe</td>
+                                    <td id="nameTable"></td>
+                                </tr>
+                                <tr>
+                                    <td>Habilidades</td>
+                                    <td id="habilidadTable"></td>
+                                </tr>
+                                <tr>
+                                    <td>Especie</td>
+                                    <td id="especieTable"></td>
+                                </tr>    
+                                <tr>
+                                    <td>Movimiento</td>
+                                    <td id="movimientosTable"></td>
+                                </tr>
+                                <tr>
+                                    <td>Tipo</td>
+                                    <td id="tipoTable"></td>
+                                </tr>
+                        </table>                       
+                    </div>
+                </div>
+                <div id="tapa2">
+                    <img src="./assets/encender.png" alt="encencde" height="62" id="encender">
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
